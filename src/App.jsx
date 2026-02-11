@@ -377,7 +377,7 @@ export default function CreativePortfolio() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40"></div>
               </div>
               <p className="font-body text-xs text-neutral-500 tracking-wider mt-4 text-center">
-                Judge Quintin Campbell, 2006
+                Judge Quintin Campbell
               </p>
             </div>
           </div>
