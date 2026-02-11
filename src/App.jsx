@@ -337,7 +337,7 @@ export default function CreativePortfolio() {
       <section className="py-32 px-6 lg:px-12 border-t border-neutral-900">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
+            <div className="order-1 lg:order-1">
               <div className="font-body text-xs tracking-[0.3em] text-[#d4af37] mb-4">
                 THE JOURNEY
               </div>
@@ -367,8 +367,8 @@ export default function CreativePortfolio() {
                 </p>
               </div>
             </div>
-            <div className="order-1 lg:order-2">
-              <div className="aspect-[4/5] max-w-md mx-auto bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+            <div className="order-2 lg:order-2">
+              <div className="aspect-[4/5] max-w-xs sm:max-w-sm lg:max-w-md mx-auto bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
                 <img
                   src="/images/Quentin.jpg"
                   alt="Judge Quintin Campbell"
@@ -625,7 +625,7 @@ export default function CreativePortfolio() {
             FRANK SKULLY
           </div>
           <p className="font-body text-sm text-neutral-600 tracking-wider">
-            © 2026 All Rights Reserved · Specializing in Criminal Justice
+            © 2024 All Rights Reserved · Specializing in Criminal Justice
             Narratives
           </p>
         </div>
