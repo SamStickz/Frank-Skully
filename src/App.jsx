@@ -625,7 +625,7 @@ export default function CreativePortfolio() {
             FRANK SKULLY
           </div>
           <p className="font-body text-sm text-neutral-600 tracking-wider">
-            © 2024 All Rights Reserved · Specializing in Criminal Justice
+            © 2026 All Rights Reserved · Specializing in Criminal Justice
             Narratives
           </p>
         </div>
