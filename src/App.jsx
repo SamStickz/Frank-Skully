@@ -368,7 +368,7 @@ export default function CreativePortfolio() {
             <div className="order-2 lg:order-2">
               <div className="aspect-[4/5] max-w-xs sm:max-w-sm lg:max-w-md mx-auto bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
                 <img
-                  src="/image/Quentin.jpg"
+                  src="/images/frank12.jpeg"
                   alt="Judge Quintin Campbell"
                   className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                 />
@@ -382,21 +382,33 @@ export default function CreativePortfolio() {
 
           {/* Archival Photos Grid */}
           <div className="grid md:grid-cols-2 gap-8 mt-20">
-            <div className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
-              <img
-                src="/uploads/frank7.jpeg"
-                alt="Early theatre days"
-                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40"></div>
+            <div className="max-w-md mx-auto w-full">
+              <div className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+                <img
+                  src="/images/frank7.jpeg"
+                  alt="Recreation at Blantyre House"
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40"></div>
+              </div>
+              <p className="font-body text-xs text-neutral-500 tracking-wider mt-4 text-center">
+                Recreation activities at Blantyre House - part of the purposeful
+                activity program
+              </p>
             </div>
-            <div className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
-              <img
-                src="/uploads/frank6.jpeg"
-                alt="Synergy Theatre Project"
-                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40"></div>
+            <div className="max-w-md mx-auto w-full">
+              <div className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+                <img
+                  src="/images/frank6.jpeg"
+                  alt="Building skills through recreation"
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40"></div>
+              </div>
+              <p className="font-body text-xs text-neutral-500 tracking-wider mt-4 text-center">
+                Inmates engaged in recreational activities - building community
+                and skills
+              </p>
             </div>
           </div>
         </div>
@@ -418,7 +430,7 @@ export default function CreativePortfolio() {
             <div className="order-2 lg:order-1">
               <div className="aspect-[4/3] max-w-md mx-auto bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
                 <img
-                  src="/uploads/frank8.jpeg"
+                  src="/images/frank8.jpeg"
                   alt="The Blantyre House Prison"
                   className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                 />
@@ -463,12 +475,12 @@ export default function CreativePortfolio() {
               self-discovery.
             </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {/* Koestler Award Photo */}
-              <div className="lg:col-span-1">
+              <div className="lg:col-span-1 max-w-sm mx-auto w-full">
                 <div className="aspect-[3/4] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
                   <img
-                    src="/uploads/frank10.jpeg"
+                    src="/images/frank10.jpeg"
                     alt="Frank at Blantyre House 1995"
                     className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                   />
@@ -481,10 +493,10 @@ export default function CreativePortfolio() {
               </div>
 
               {/* Prince Charming Performance */}
-              <div className="lg:col-span-2">
+              <div className="lg:col-span-2 max-w-2xl mx-auto w-full">
                 <div className="aspect-[16/10] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
                   <img
-                    src="/uploads/frank11.jpeg"
+                    src="/images/frank11.jpeg"
                     alt="Frank playing Prince Charming"
                     className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                   />
@@ -504,7 +516,7 @@ export default function CreativePortfolio() {
               <div>
                 <div className="aspect-[3/4] max-w-sm mx-auto bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
                   <img
-                    src="/image/Quentin.jpg"
+                    src="/images/frank12.jpeg"
                     alt="Judge Quentin Campbell"
                     className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                   />
