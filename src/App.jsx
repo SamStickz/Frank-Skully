@@ -346,31 +346,29 @@ export default function CreativePortfolio() {
               </h2>
               <div className="space-y-6 font-body text-lg text-neutral-300 leading-relaxed">
                 <p>
-                  20 years ago in 2006, a Crown Court judge took a gamble on a
-                  defendant facing cash in transit van robbery charges. Instead
-                  of imposing a custodial sentence, he took the unusual step of
-                  sending the defendant on a theatre tour with Synergy Theatre
-                  Project.
+                  After release, I struggled. Within two years I was facing a
+                  £25k theft charge from Securicor cash services, but a judge's
+                  unconventional decision changed everything.
                 </p>
                 <p>
-                  Director Esther Baker had come to court to plead for leniency
-                  after she had cast the defendant in the lead role of her
-                  production of <em className="italic">Elmina's Kitchen</em>.
-                  That defendant was me.
+                  Theatre director Esther Baker's testimony led to a theatre
+                  tour with Synergy Theatre Project instead of prison custody.
+                  The opportunity proved pivotal and I remained offence-free for
+                  the next 20 years.
                 </p>
                 <p>
-                  This pivotal moment transformed my life's trajectory, proving
-                  that art and second chances can redirect destinies. It's why I
-                  bring unparalleled authenticity to criminal justice
-                  narratives—I've lived the complexity of that system and
-                  witnessed its capacity for redemption.
+                  This moment transformed my life's trajectory, proving that art
+                  and second chances can redirect destinies. It's why I bring
+                  unparalleled authenticity to criminal justice narratives—I've
+                  lived the complexity of that system and witnessed its capacity
+                  for redemption.
                 </p>
               </div>
             </div>
             <div className="order-2 lg:order-2">
               <div className="aspect-[4/5] max-w-xs sm:max-w-sm lg:max-w-md mx-auto bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
                 <img
-                  src="/images/Quentin.jpg"
+                  src="/image/Quentin.jpg"
                   alt="Judge Quintin Campbell"
                   className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                 />
@@ -379,6 +377,185 @@ export default function CreativePortfolio() {
               <p className="font-body text-xs text-neutral-500 tracking-wider mt-4 text-center">
                 Judge Quintin Campbell
               </p>
+            </div>
+          </div>
+
+          {/* Archival Photos Grid */}
+          <div className="grid md:grid-cols-2 gap-8 mt-20">
+            <div className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+              <img
+                src="/uploads/frank7.jpeg"
+                alt="Early theatre days"
+                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40"></div>
+            </div>
+            <div className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+              <img
+                src="/uploads/frank6.jpeg"
+                alt="Synergy Theatre Project"
+                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blantyre House Section */}
+      <section className="py-32 px-6 lg:px-12 bg-neutral-950/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="font-body text-xs tracking-[0.3em] text-[#d4af37] mb-4">
+              TRANSFORMATION
+            </div>
+            <h2 className="font-display text-5xl lg:text-6xl font-light mb-8">
+              Blantyre House
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+            <div className="order-2 lg:order-1">
+              <div className="aspect-[4/3] max-w-md mx-auto bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+                <img
+                  src="/uploads/frank8.jpeg"
+                  alt="The Blantyre House Prison"
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40"></div>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="space-y-6 font-body text-lg text-neutral-300 leading-relaxed">
+                <p>
+                  According to a Home Affairs Committee report prepared after a
+                  large scale prison inspection in 2000, just 8% of prisoners
+                  released from Blantyre House reoffended within two years
+                  against a national average of 57%.
+                </p>
+                <p>
+                  The report adds that prisoners spent 43.6 hours a week on
+                  "purposeful activity", compared with a target of 36 hours and
+                  a prison service average of 23 hours.
+                </p>
+                <p>
+                  A contributing factor to Blantyre's success was perhaps that
+                  officials could select their inmates. Blantyre House's
+                  criteria for acceptance: no convictions for arson, sex
+                  offences or terrorism.
+                </p>
+                <p className="italic text-neutral-400">
+                  "Everyone wanted to go to Blantyre, it became the Eton School
+                  of the prison service."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Inside Blantyre House - Theatre Work */}
+          <div className="border-t border-neutral-900 pt-20">
+            <h3 className="font-display text-4xl font-light mb-12 text-center">
+              Inside Blantyre House
+            </h3>
+            <p className="font-body text-lg text-neutral-300 text-center mb-16 max-w-3xl mx-auto">
+              I was part of a team of inmates who performed pantomimes for kids
+              from local schools. Theatre became a pathway to redemption and
+              self-discovery.
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Koestler Award Photo */}
+              <div className="lg:col-span-1">
+                <div className="aspect-[3/4] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+                  <img
+                    src="/uploads/frank10.jpeg"
+                    alt="Frank at Blantyre House 1995"
+                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40"></div>
+                </div>
+                <p className="font-body text-xs text-neutral-500 tracking-wider mt-4">
+                  A Koestler award-winning photo taken at Blantyre House in 1995
+                  by photographer Mick Duff
+                </p>
+              </div>
+
+              {/* Prince Charming Performance */}
+              <div className="lg:col-span-2">
+                <div className="aspect-[16/10] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+                  <img
+                    src="/uploads/frank11.jpeg"
+                    alt="Frank playing Prince Charming"
+                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40"></div>
+                </div>
+                <p className="font-body text-xs text-neutral-500 tracking-wider mt-4">
+                  Playing Prince Charming in a prison production for local
+                  school children
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Judge's Letter */}
+          <div className="border-t border-neutral-900 mt-20 pt-20">
+            <div className="grid lg:grid-cols-2 gap-16 items-start">
+              <div>
+                <div className="aspect-[3/4] max-w-sm mx-auto bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+                  <img
+                    src="/image/Quentin.jpg"
+                    alt="Judge Quentin Campbell"
+                    className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-40"></div>
+                </div>
+                <p className="font-body text-xs text-neutral-500 tracking-wider mt-4 text-center">
+                  Judge Quentin Campbell
+                </p>
+              </div>
+              <div>
+                <div className="font-body text-xs tracking-[0.3em] text-[#d4af37] mb-4">
+                  A LETTER FROM THE JUDGE
+                </div>
+                <h3 className="font-display text-3xl font-light mb-8">
+                  Full Circle
+                </h3>
+                <div className="bg-neutral-900/50 border border-neutral-800 p-8 lg:p-10">
+                  <div className="space-y-4 font-body text-base text-neutral-300 leading-relaxed italic">
+                    <p>
+                      "I am so glad that things have worked out well with you. I
+                      do not recollect the details of the case that brought you
+                      to court but I do remember deferring things to enable you
+                      to continue with the theatre project.
+                    </p>
+                    <p>
+                      I had previously learned about the Synergy productions and
+                      indeed went to one of their productions at the small
+                      theatre in Southwark.
+                    </p>
+                    <p>
+                      The days at court are now for me a thing of the past as I
+                      have been retired for twelve years. Sadly in recent years
+                      the independence of judges has been substantially eroded
+                      and now sentencing follows rigid guidelines allowing
+                      judges much less ability to pass sentences that appear to
+                      be fair and just in all the circumstances.
+                    </p>
+                    <p>
+                      I doubt whether I would now be permitted to follow the
+                      same course in your case.
+                    </p>
+                    <p>
+                      I wish you all the best in the future and hope your career
+                      continues to flourish."
+                    </p>
+                    <p className="text-right not-italic text-neutral-400 mt-6">
+                      — Quentin Campbell
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -625,7 +802,7 @@ export default function CreativePortfolio() {
             FRANK SKULLY
           </div>
           <p className="font-body text-sm text-neutral-600 tracking-wider">
-            © 2026 All Rights Reserved · Specializing in Criminal Justice
+            © 2024 All Rights Reserved · Specializing in Criminal Justice
             Narratives
           </p>
         </div>
