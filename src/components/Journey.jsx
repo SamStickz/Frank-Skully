@@ -40,7 +40,7 @@ export default function Journey() {
             <div>
               <div className="max-w-xs sm:max-w-sm mx-auto bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
                 <img
-                  src="/images/frank12.jpeg"
+                  src="/images/frank13.jpeg"
                   alt="Judge Quentin Campbell"
                   className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                 />
