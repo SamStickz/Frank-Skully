@@ -37,8 +37,8 @@ export default function Journey() {
         {/* Judge's Letter */}
         <div className="border-t border-neutral-900 mt-16 sm:mt-20 pt-16 sm:pt-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            <div>
-              <div className="max-w-xs sm:max-w-sm mx-auto bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+            <div className="flex flex-col items-center">
+              <div className="w-full lg:max-w-none max-w-sm bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
                 <img
                   src="/images/frank13.jpeg"
                   alt="Judge Quentin Campbell"
