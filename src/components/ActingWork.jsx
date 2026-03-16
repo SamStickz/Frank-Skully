@@ -58,12 +58,12 @@ export default function ActingWork() {
             {actingCredits.map((credit, index) => (
               <div
                 key={index}
-                className="aspect-[3/4] bg-neutral-900 border border-neutral-800 relative overflow-hidden group"
+                className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group"
               >
                 <img
                   src={credit.image}
                   alt={credit.title}
-                  className={w-full h-full object-cover ${credit.position} opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700}
+                  className={`w-full h-full object-cover ${credit.position} opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700`}
                 />
               </div>
             ))}
