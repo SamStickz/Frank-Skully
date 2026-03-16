@@ -69,8 +69,7 @@ export default function BlantyreHouse() {
             />
           </div>
         </div>
-
-        {/* Pantomime Gallery - 5 images: 3 on top, 2 on bottom */}
+        {/* Pantomime Gallery - 2 + 1 + 2 layout */}
         <div className="mb-16 sm:mb-20">
           <div className="text-center mb-8 sm:mb-12">
             <div className="font-body text-[10px] sm:text-xs tracking-[0.3em] text-[#d4af37] mb-3 sm:mb-4">
@@ -81,9 +80,9 @@ export default function BlantyreHouse() {
             </h3>
           </div>
 
-          {/* Top row - 3 images */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 mb-4 sm:mb-6">
-            {pantomimeImages.slice(0, 3).map((image, index) => (
+          {/* Row 1 - 2 images */}
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
+            {pantomimeImages.slice(0, 2).map((image, index) => (
               <div
                 key={index}
                 className="aspect-[3/4] bg-neutral-900 border border-neutral-800 relative overflow-hidden group"
@@ -97,8 +96,19 @@ export default function BlantyreHouse() {
             ))}
           </div>
 
-          {/* Bottom row - 2 images centered */}
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto">
+          {/* Row 2 - 1 image centered */}
+          <div className="max-w-xs mx-auto mb-4 sm:mb-6">
+            <div className="aspect-[3/4] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+              <img
+                src={pantomimeImages[2].src}
+                alt={pantomimeImages[2].alt}
+                className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+              />
+            </div>
+          </div>
+
+          {/* Row 3 - 2 images */}
+          <div className="grid grid-cols-2 gap-4 sm:gap-6">
             {pantomimeImages.slice(3).map((image, index) => (
               <div
                 key={index}
