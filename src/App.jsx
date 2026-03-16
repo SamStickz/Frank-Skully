@@ -2,12 +2,13 @@ import Navigation from "./components/Navigation";
 import Hero from "./components/Hero.jsx";
 import Awards from "./components/Awards.jsx";
 import Journey from "./components/Journey.jsx";
-import BlantyreHouse from "/components/BlantyreHouse.jsx";
-import BlackSanta from "/components/BlackSanta.jsx";
-import ActingWork from "/components/ActingWork.jsx";
+import BlantyreHouse from "./components/BlantyreHouse.jsx";
+import BlackSanta from "./components/BlackSanta.jsx";
+import ActingWork from "./components/ActingWork.jsx";
+import HardTalkingExCons from "./components/HardTalkingExCons.jsx";
 import About from "./components/About.jsx";
 import Philosophy from "./components/Philosophy.jsx";
-import HardTalkingExCons from "/components/HardTalkingExCons.jsx";
+
 import Services from "./components/Services.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import Contact from "./components/Contact.jsx";
