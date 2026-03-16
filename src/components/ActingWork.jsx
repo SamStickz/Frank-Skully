@@ -4,7 +4,7 @@ export default function ActingWork() {
       title: "The Gentlemen",
       platform: "Netflix",
       image: "/images/gentlemen-netflix.jpg",
-      position: "object-center",
+      position: "object-left",
     },
     {
       title: "Bridgerton",
