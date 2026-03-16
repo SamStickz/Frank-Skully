@@ -7,7 +7,7 @@ import BlackSanta from "./components/BlackSanta";
 import ActingWork from "./components/ActingWork";
 import About from "./components/About";
 import Philosophy from "./components/Philosophy";
-import HardTalkingExCons from "./components/Hardtalkingexcons.jsx";
+import HardTalkingExCons from "./components/HardTalkingExCons";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
