@@ -1,17 +1,17 @@
 import Navigation from "./components/Navigation";
-import Hero from "./components/Hero";
-import Awards from "./components/Awards";
-import Journey from "./components/Journey";
-import BlantyreHouse from "./components/BlantyreHouse";
-import BlackSanta from "./components/BlackSanta";
-import ActingWork from "./components/ActingWork";
-import About from "./components/About";
-import Philosophy from "./components/Philosophy";
-import HardTalkingExCons from "./components/HardTalkingExCons";
-import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Hero from "./components/Hero.jsx";
+import Awards from "./components/Awards.jsx";
+import Journey from "./components/Journey.jsx";
+import BlantyreHouse from "/components/BlantyreHouse.jsx";
+import BlackSanta from "/components/BlackSanta.jsx";
+import ActingWork from "/components/ActingWork.jsx";
+import About from "./components/About.jsx";
+import Philosophy from "./components/Philosophy.jsx";
+import HardTalkingExCons from "/components/HardTalkingExCons.jsx";
+import Services from "./components/Services.jsx";
+import Portfolio from "./components/Portfolio.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 export default function App() {
   return (
