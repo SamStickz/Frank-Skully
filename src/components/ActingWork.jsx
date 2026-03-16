@@ -54,12 +54,12 @@ export default function ActingWork() {
             {actingCredits.map((credit, index) => (
               <div
                 key={index}
-                className="bg-neutral-900 border border-neutral-800 relative overflow-hidden group"
+                className="aspect-[3/4] bg-neutral-900 border border-neutral-800 relative overflow-hidden group"
               >
                 <img
                   src={credit.image}
                   alt={credit.title}
-                  className="w-full h-auto opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover object-center opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                 />
               </div>
             ))}
@@ -82,18 +82,18 @@ export default function ActingWork() {
           </div>
 
           <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto mb-12 sm:mb-16">
-            <div className="bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+            <div className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
               <img
                 src="/images/stand-in.jpg"
                 alt="Stand-in work - Period costume"
-                className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                className="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity duration-700"
               />
             </div>
-            <div className="bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+            <div className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
               <img
                 src="/images/william.jpg"
                 alt="Stand-in work - Will.I.Am music video"
-                className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+                className="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity duration-700"
               />
             </div>
           </div>
