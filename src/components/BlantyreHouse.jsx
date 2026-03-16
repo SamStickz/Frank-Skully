@@ -1,4 +1,27 @@
 export default function BlantyreHouse() {
+  const pantomimeImages = [
+    {
+      src: "/images/panto1.jpeg",
+      alt: "Prince Charming pantomime - Blantyre House 1995",
+    },
+    {
+      src: "/images/panto2.jpeg",
+      alt: "Pantomime performance - Blantyre House 1995",
+    },
+    {
+      src: "/images/panto3.jpeg",
+      alt: "Snow White and the 7 Prisoners - Blantyre House 1995",
+    },
+    {
+      src: "/images/panto4.jpeg",
+      alt: "Stage performance - Blantyre House 1995",
+    },
+    {
+      src: "/images/panto5.jpeg",
+      alt: "Blantyre House pantomime 1995",
+    },
+  ];
+
   return (
     <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
@@ -47,7 +70,51 @@ export default function BlantyreHouse() {
           </div>
         </div>
 
-        {/* Frank6 and Frank7 side by side - EVEN ON MOBILE */}
+        {/* Pantomime Gallery - 5 images: 3 on top, 2 on bottom */}
+        <div className="mb-16 sm:mb-20">
+          <div className="text-center mb-8 sm:mb-12">
+            <div className="font-body text-[10px] sm:text-xs tracking-[0.3em] text-[#d4af37] mb-3 sm:mb-4">
+              SNOW WHITE AND THE 7 PRISONERS — 1995
+            </div>
+            <h3 className="font-display text-3xl sm:text-4xl font-light">
+              Theatre Behind Bars
+            </h3>
+          </div>
+
+          {/* Top row - 3 images */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 mb-4 sm:mb-6">
+            {pantomimeImages.slice(0, 3).map((image, index) => (
+              <div
+                key={index}
+                className="aspect-[3/4] bg-neutral-900 border border-neutral-800 relative overflow-hidden group"
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom row - 2 images centered */}
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto">
+            {pantomimeImages.slice(3).map((image, index) => (
+              <div
+                key={index}
+                className="aspect-[3/4] bg-neutral-900 border border-neutral-800 relative overflow-hidden group"
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Frank6 and Frank7 side by side */}
         <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
           <div className="bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
             <img
