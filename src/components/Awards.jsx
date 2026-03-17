@@ -6,25 +6,25 @@ export default function Awards() {
       year: "2024",
       title: "Nominated Best Supporting Male Actor in a Play",
       subtitle: "Black British Theatre Awards",
-      image: "/images/bbta2024.jpeg",
+      image: "/images/frank25.jpeg",
     },
     {
       year: "2023",
       title: "Best Producer of the Year",
       subtitle: "Going For Gold — UK Tour",
-      image: "/images/bestproducer.jpeg",
+      image: "/images/frank29.jpeg",
     },
     {
       year: "2022",
       title: "Royal Television Society Award",
       subtitle: "Best Pre-School Children's Programme — JoJo & Gran Gran",
-      image: "/images/jojograngran-award.jpeg",
+      image: "/images/frank27.jpeg",
     },
     {
       year: "2021",
       title: "1st Prize — Synergy Theatre & Soho Theatre",
       subtitle: "Lockdown Drama Writing Competition — Food of Peace",
-      image: "/images/lockdowndrama.jpeg",
+      image: "/images/frank24.jpeg",
     },
   ];
 
@@ -39,13 +39,13 @@ export default function Awards() {
             Awards & Nominations
           </h2>
         </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {awards.map((award, index) => (
             <div
               key={index}
               className="bg-neutral-900/50 border border-neutral-800 hover:border-[#d4af37] transition-all duration-500 group overflow-hidden"
             >
-              {/* Image */}
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={award.image}
@@ -53,8 +53,6 @@ export default function Awards() {
                   className="w-full h-full object-cover object-center opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                 />
               </div>
-
-              {/* Content */}
               <div className="p-6 sm:p-8">
                 <Award className="w-8 h-8 sm:w-10 sm:h-10 text-[#d4af37] mb-3 sm:mb-4 opacity-70 group-hover:opacity-100 transition-opacity" />
                 <div className="font-body text-xs sm:text-sm tracking-[0.3em] text-[#d4af37] mb-2">
@@ -69,6 +67,29 @@ export default function Awards() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Best Producer Video */}
+        <div className="border-t border-neutral-900 mt-16 sm:mt-20 pt-16 sm:pt-20">
+          <div className="text-center mb-8 sm:mb-12">
+            <div className="font-body text-[10px] sm:text-xs tracking-[0.3em] text-[#d4af37] mb-3 sm:mb-4">
+              BLACK BRITISH THEATRE AWARDS 2023
+            </div>
+            <h3 className="font-display text-3xl sm:text-4xl font-light">
+              Best Producer of the Year
+            </h3>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-neutral-900 border border-neutral-800 overflow-hidden">
+              <video
+                src="/videos/franky.mp4"
+                controls
+                playsInline
+                className="w-full h-auto"
+                poster="/images/bestproducer.jpeg"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
