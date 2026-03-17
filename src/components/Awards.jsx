@@ -24,7 +24,7 @@ export default function Awards() {
       year: "2021",
       title: "1st Prize — Synergy Theatre & Soho Theatre",
       subtitle: "Lockdown Drama Writing Competition — Food of Peace",
-      images: ["/images/frank24.jpeg", "/images/frank23.jpeg"],
+      images: ["/images/frank24.jpeg"],
     },
   ];
 
@@ -55,13 +55,16 @@ export default function Awards() {
                   />
                 </div>
               ) : (
-                <div className="grid grid-cols-2 aspect-[4/3] overflow-hidden">
+                <div className="flex flex-col overflow-hidden">
                   {award.images.map((img, i) => (
-                    <div key={i} className="relative overflow-hidden">
+                    <div
+                      key={i}
+                      className="aspect-[16/9] relative overflow-hidden"
+                    >
                       <img
                         src={img}
                         alt={`${award.title} ${i + 1}`}
-                        className="w-full h-full object-cover object-top scale-125 opacity-90 transition-all duration-700"
+                        className="w-full h-full object-cover object-center opacity-90 transition-all duration-700"
                       />
                     </div>
                   ))}
