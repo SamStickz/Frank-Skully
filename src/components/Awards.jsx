@@ -46,13 +46,12 @@ export default function Awards() {
               key={index}
               className="bg-neutral-900/50 border border-neutral-800 hover:border-[#d4af37] transition-all duration-500 group overflow-hidden"
             >
-              {/* Single or double image */}
               {award.images.length === 1 ? (
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={award.images[0]}
                     alt={award.title}
-                    className="w-full h-full object-cover object-center opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                    className="w-full h-full object-cover object-top opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                   />
                 </div>
               ) : (
@@ -62,14 +61,13 @@ export default function Awards() {
                       <img
                         src={img}
                         alt={`${award.title} ${i + 1}`}
-                        className="w-full h-full object-cover object-center opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                        className="w-full h-full object-cover object-top scale-125 opacity-90 transition-all duration-700"
                       />
                     </div>
                   ))}
                 </div>
               )}
 
-              {/* Content */}
               <div className="p-6 sm:p-8">
                 <Award className="w-8 h-8 sm:w-10 sm:h-10 text-[#d4af37] mb-3 sm:mb-4 opacity-70 group-hover:opacity-100 transition-opacity" />
                 <div className="font-body text-xs sm:text-sm tracking-[0.3em] text-[#d4af37] mb-2">
@@ -99,7 +97,7 @@ export default function Awards() {
           <div className="max-w-3xl mx-auto">
             <div className="bg-neutral-900 border border-neutral-800 overflow-hidden">
               <video
-                src="/videos/franky.mp4"
+                src="/images/franky.mp4"
                 controls
                 playsInline
                 className="w-full h-auto"
