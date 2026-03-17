@@ -40,7 +40,7 @@ export default function Journey() {
             <div className="flex flex-col items-center">
               <div className="w-full lg:max-w-none max-w-sm bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
                 <img
-                  src="/images/frank13.jpeg"
+                  src="/images/frank30.jpeg"
                   alt="Judge Quentin Campbell"
                   className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                 />
