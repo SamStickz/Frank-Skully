@@ -7,24 +7,28 @@ export default function Awards() {
       title: "Nominated Best Supporting Male Actor in a Play",
       subtitle: "Black British Theatre Awards",
       images: ["/images/frank25.jpeg"],
+      position: "object-top",
     },
     {
       year: "2023",
       title: "Best Producer of the Year",
       subtitle: "Going For Gold — UK Tour",
       images: ["/images/frank29.jpeg"],
+      position: "object-top",
     },
     {
       year: "2022",
       title: "Royal Television Society Award",
       subtitle: "Best Pre-School Children's Programme — JoJo & Gran Gran",
       images: ["/images/frank27.jpeg"],
+      position: "object-top",
     },
     {
       year: "2021",
       title: "1st Prize — Synergy Theatre & Soho Theatre",
       subtitle: "Lockdown Drama Writing Competition — Food of Peace",
       images: ["/images/frank24.jpeg"],
+      position: "object-left",
     },
   ];
 
@@ -46,30 +50,13 @@ export default function Awards() {
               key={index}
               className="bg-neutral-900/50 border border-neutral-800 hover:border-[#d4af37] transition-all duration-500 group overflow-hidden"
             >
-              {award.images.length === 1 ? (
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={award.images[0]}
-                    alt={award.title}
-                    className="w-full h-full object-cover object-top opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
-                  />
-                </div>
-              ) : (
-                <div className="flex flex-col overflow-hidden">
-                  {award.images.map((img, i) => (
-                    <div
-                      key={i}
-                      className="aspect-[16/9] relative overflow-hidden"
-                    >
-                      <img
-                        src={img}
-                        alt={`${award.title} ${i + 1}`}
-                        className="w-full h-full object-cover object-center opacity-90 transition-all duration-700"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={award.images[0]}
+                  alt={award.title}
+                  className={`w-full h-full object-cover ${award.position} opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700`}
+                />
+              </div>
 
               <div className="p-6 sm:p-8">
                 <Award className="w-8 h-8 sm:w-10 sm:h-10 text-[#d4af37] mb-3 sm:mb-4 opacity-70 group-hover:opacity-100 transition-opacity" />
