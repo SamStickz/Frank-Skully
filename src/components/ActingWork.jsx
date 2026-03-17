@@ -70,6 +70,66 @@ export default function ActingWork() {
           </div>
         </div>
 
+        {/* Voice Over Work */}
+        <div className="border-t border-neutral-900 pt-20 sm:pt-32 mb-20 sm:mb-32">
+          <div className="text-center mb-12 sm:mb-16">
+            <div className="font-body text-[10px] sm:text-xs tracking-[0.3em] text-[#d4af37] mb-3 sm:mb-4">
+              VOICE ACTING
+            </div>
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light mb-6 sm:mb-8">
+              Voice Over Work
+            </h2>
+            <p className="font-body text-base sm:text-lg text-neutral-300 max-w-3xl mx-auto px-4">
+              Frank voiced a lead character in the Royal Television Society
+              Award-winning BBC CBeebies series JoJo & Gran Gran
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center max-w-5xl mx-auto">
+            <div className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+              <img
+                src="/images/frank20.jpeg"
+                alt="Frank Skully recording studio"
+                className="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+              />
+            </div>
+            <div className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+              <img
+                src="/images/frank21.jpeg"
+                alt="BBC JoJo and Gran Gran"
+                className="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Soho Theatre */}
+        <div className="border-t border-neutral-900 pt-20 sm:pt-32 mb-20 sm:mb-32">
+          <div className="text-center mb-12 sm:mb-16">
+            <div className="font-body text-[10px] sm:text-xs tracking-[0.3em] text-[#d4af37] mb-3 sm:mb-4">
+              THEATRE
+            </div>
+            <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light mb-6 sm:mb-8">
+              Soho Theatre
+            </h2>
+            <p className="font-body text-base sm:text-lg text-neutral-300 max-w-3xl mx-auto px-4">
+              Frank's award-winning play <em>Food of Peace</em> was performed at
+              the Soho Theatre, London — winner of the Synergy Theatre Project &
+              Soho Theatre Lockdown Drama Writing Competition 2021
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <div className="aspect-[16/9] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+              <img
+                src="/images/frank23.jpeg"
+                alt="Soho Theatre"
+                className="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity duration-700"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Stand-In Work */}
         <div className="border-t border-neutral-900 pt-20 sm:pt-32">
           <div className="text-center mb-12 sm:mb-16">
