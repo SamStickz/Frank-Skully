@@ -2,10 +2,30 @@ import { Award } from "lucide-react";
 
 export default function Awards() {
   const awards = [
-    { year: "2024", title: "BBTAS Nominated Best Supporting Actor" },
-    { year: "2023", title: "BBTAS Co-Producer of the Year" },
-    { year: "2022", title: "Award Winning Voice Over Artist" },
-    { year: "2021", title: "Award Winning Writer" },
+    {
+      year: "2024",
+      title: "Nominated Best Supporting Male Actor in a Play",
+      subtitle: "Black British Theatre Awards",
+      image: "/images/bbta2024.jpeg",
+    },
+    {
+      year: "2023",
+      title: "Best Producer of the Year",
+      subtitle: "Going For Gold — UK Tour",
+      image: "/images/bestproducer.jpeg",
+    },
+    {
+      year: "2022",
+      title: "Royal Television Society Award",
+      subtitle: "Best Pre-School Children's Programme — JoJo & Gran Gran",
+      image: "/images/jojograngran-award.jpeg",
+    },
+    {
+      year: "2021",
+      title: "1st Prize — Synergy Theatre & Soho Theatre",
+      subtitle: "Lockdown Drama Writing Competition — Food of Peace",
+      image: "/images/lockdowndrama.jpeg",
+    },
   ];
 
   return (
@@ -23,15 +43,30 @@ export default function Awards() {
           {awards.map((award, index) => (
             <div
               key={index}
-              className="bg-neutral-900/50 border border-neutral-800 p-6 sm:p-8 hover:border-[#d4af37] transition-all duration-500 group"
+              className="bg-neutral-900/50 border border-neutral-800 hover:border-[#d4af37] transition-all duration-500 group overflow-hidden"
             >
-              <Award className="w-10 h-10 sm:w-12 sm:h-12 text-[#d4af37] mb-4 sm:mb-6 opacity-70 group-hover:opacity-100 transition-opacity" />
-              <div className="font-body text-xs sm:text-sm tracking-[0.3em] text-[#d4af37] mb-2 sm:mb-3">
-                {award.year}
+              {/* Image */}
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={award.image}
+                  alt={award.title}
+                  className="w-full h-full object-cover object-center opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                />
               </div>
-              <h3 className="font-display text-xl sm:text-2xl font-light leading-tight">
-                {award.title}
-              </h3>
+
+              {/* Content */}
+              <div className="p-6 sm:p-8">
+                <Award className="w-8 h-8 sm:w-10 sm:h-10 text-[#d4af37] mb-3 sm:mb-4 opacity-70 group-hover:opacity-100 transition-opacity" />
+                <div className="font-body text-xs sm:text-sm tracking-[0.3em] text-[#d4af37] mb-2">
+                  {award.year}
+                </div>
+                <h3 className="font-display text-lg sm:text-xl font-light leading-tight mb-2">
+                  {award.title}
+                </h3>
+                <p className="font-body text-xs sm:text-sm text-neutral-400 leading-relaxed">
+                  {award.subtitle}
+                </p>
+              </div>
             </div>
           ))}
         </div>
