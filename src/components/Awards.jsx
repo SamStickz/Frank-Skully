@@ -33,7 +33,10 @@ export default function Awards() {
   ];
 
   return (
-    <section className=' py-20 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-12 id="awards" '>
+    <section
+      id="awards"
+      className="py-20 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-12"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 sm:mb-20">
           <div className="font-body text-[10px] sm:text-xs tracking-[0.3em] text-[#d4af37] mb-3 sm:mb-4">
