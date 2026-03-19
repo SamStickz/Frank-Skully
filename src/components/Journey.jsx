@@ -45,9 +45,7 @@ export default function Journey() {
                   className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-700"
                 />
               </div>
-              <p className="font-body text-[10px] sm:text-xs text-neutral-500 tracking-wider mt-3 sm:mt-4 text-center">
-                Judge Quentin Campbell
-              </p>
+              
             </div>
             <div>
               <div className="font-body text-[10px] sm:text-xs tracking-[0.3em] text-[#d4af37] mb-3 sm:mb-4">
