@@ -107,7 +107,7 @@ export default function Portfolio() {
                 className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-700"
               />
             </div>
-            <div className="bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+            <div className="bg-neutral-900 border border-neutral-800 relative overflow-hidden group flex items-center">
               <img
                 src="/images/frontline-waterstones.jpeg"
                 alt="The Frontline on Waterstones"
