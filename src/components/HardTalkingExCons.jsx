@@ -1,6 +1,6 @@
 export default function HardTalkingExCons() {
   return (
-    <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-12 bg-neutral-950/50">
+    <section className='py-20 sm:py-32 px-4 sm:px-6 lg:px-12 bg-neutral-950/50 id="hard-talking"'>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 sm:mb-16">
           <div className="font-body text-[10px] sm:text-xs tracking-[0.3em] text-[#d4af37] mb-3 sm:mb-4">GIVING BACK</div>
