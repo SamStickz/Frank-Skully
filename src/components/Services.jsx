@@ -61,6 +61,37 @@ export default function Services() {
             justice narratives
           </p>
         </div>
+
+        {/* Consultant Services Intro */}
+        <div className="max-w-4xl mx-auto mb-16 sm:mb-20">
+          <p className="font-body text-lg sm:text-xl text-[#d4af37] text-center mb-8 sm:mb-12 px-4 leading-relaxed">
+            Frank Skully consultant services provides authenticity, realism, and
+            specialized knowledge to crime dramas and documentaries.
+          </p>
+
+          {/* Art Imitates Life Video */}
+          <div className="aspect-video bg-neutral-900 border border-neutral-800 overflow-hidden mb-4 sm:mb-6">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/BL-SlKVoGro"
+              title="Art Imitates Life by Frank Skully"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
+          <div className="text-center">
+            <h3 className="font-display text-2xl sm:text-3xl font-light mb-2 text-[#d4af37]">
+              Art Imitates Life
+            </h3>
+            <p className="font-body text-sm sm:text-base text-neutral-400">
+              by Frank Skully
+            </p>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-px bg-neutral-900">
           {services.map((service, index) => (
             <div

@@ -1,9 +1,17 @@
 export default function Portfolio() {
   const videos = [
-    { id: "HPVEdIN9hSI", title: "Showreel", type: "Featured Work" },
-    { id: "ZWzzfjMJW-Q", title: "Performance", type: "Film & TV" },
-    { id: "jgZsihJRpnQ", title: "Behind Scenes", type: "Short" },
-    { id: "PC9bUZf1G8U", title: "Acting Sample", type: "Short" },
+    {
+      id: "HPVEdIN9hSI",
+      title: "Duvall & Sam Gray - Good Feeling",
+      type: "Music Video",
+    },
+    { id: "ZWzzfjMJW-Q", title: "Scottish Bus Commercial", type: "Advert" },
+    { id: "jgZsihJRpnQ", title: "The Thief - Synergy Studios", type: "Short" },
+    {
+      id: "PC9bUZf1G8U",
+      title: "Kiss Marry Kill - Dante or Die",
+      type: "Theatre Play",
+    },
   ];
 
   const portfolio = [
@@ -107,8 +115,11 @@ export default function Portfolio() {
                 className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-700"
               />
             </div>
-            <div className="bg-neutral-900 border border-neutral-800 relative overflow-hidden group flex items-center 
-            justify-center" style={{alignSelf: 'stretch'}}>
+            <div
+              className="bg-neutral-900 border border-neutral-800 relative overflow-hidden group flex items-center 
+            justify-center"
+              style={{ alignSelf: "stretch" }}
+            >
               <img
                 src="/images/frontline-waterstones.jpeg"
                 alt="The Frontline on Waterstones"
