@@ -1,4 +1,4 @@
-import BackgroundMusic from "@/components/BackgroundMusic";
+
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero.jsx";
 import Awards from "./components/Awards.jsx";
@@ -32,7 +32,7 @@ export default function App() {
         * { scroll-behavior: smooth; }
       `}</style>
 
-      <BackgroundMusic />
+     
       <Navigation />
       <Hero />
       <Awards />
