@@ -19,7 +19,7 @@ export default function Portfolio() {
       title: "Every Sinner Has a Future",
       category: "Documentary",
       year: "2024",
-      link: "#awards",
+      link: "#philosophy-video", 
     },
     {
       title: "Hard Talking Ex Cons",

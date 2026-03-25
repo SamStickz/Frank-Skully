@@ -53,7 +53,10 @@ export default function Philosophy() {
           </div>
 
           {/* Video Section */}
-          <div className="border-t border-neutral-900 mt-16 sm:mt-20 pt-16 sm:pt-20">
+          <div
+            id="philosophy-video"
+            className="border-t border-neutral-900 mt-16 sm:mt-20 pt-16 sm:pt-20"
+          >
             <div className="max-w-4xl mx-auto">
               <div className="font-body text-xs sm:text-sm tracking-[0.3em] text-[#d4af37] mb-4 sm:mb-6 text-center">
                 FEATURED VIDEO
