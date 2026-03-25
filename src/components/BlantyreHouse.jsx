@@ -1,24 +1,24 @@
 export default function BlantyreHouse() {
-  const pantomimeImages = [
+  const elminaImages = [
     {
-      src: "/images/panto1.jpeg",
-      alt: "Prince Charming pantomime - Blantyre House 1995",
+      src: "/images/elmina1.jpeg",
+      alt: "Frank Skully in Elmina's Kitchen",
     },
     {
-      src: "/images/panto2.jpeg",
-      alt: "Pantomime performance - Blantyre House 1995",
+      src: "/images/elmina2.jpeg",
+      alt: "Elmina's Kitchen scene",
     },
     {
-      src: "/images/panto3.jpeg",
-      alt: "Snow White and the 7 Prisoners - Blantyre House 1995",
+      src: "/images/elmina5.jpeg",
+      alt: "Synergy Theatre Project - Elmina's Kitchen",
     },
     {
-      src: "/images/panto4.jpeg",
-      alt: "Stage performance - Blantyre House 1995",
+      src: "/images/elmina4.jpeg",
+      alt: "Elmina's Kitchen - knife scene",
     },
     {
-      src: "/images/panto5.jpeg",
-      alt: "Blantyre House pantomime 1995",
+      src: "/images/elmina3.jpeg",
+      alt: "Elmina's Kitchen - Frank with woman",
     },
   ];
 
@@ -69,20 +69,21 @@ export default function BlantyreHouse() {
             />
           </div>
         </div>
-        {/* Pantomime Gallery - 2 + 1 + 2 layout */}
+
+        {/* Elmina's Kitchen Gallery - 2 + 1 + 2 layout */}
         <div className="mb-16 sm:mb-20">
           <div className="text-center mb-8 sm:mb-12">
             <div className="font-body text-[10px] sm:text-xs tracking-[0.3em] text-[#d4af37] mb-3 sm:mb-4">
-              SNOW WHITE AND THE 7 PRISONERS — 1995
+              SYNERGY THEATRE PROJECT
             </div>
             <h3 className="font-display text-3xl sm:text-4xl font-light">
-              Theatre Behind Bars
+              Theatre Behind Bars — Elmina's Kitchen
             </h3>
           </div>
 
           {/* Row 1 - 2 images */}
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
-            {pantomimeImages.slice(0, 2).map((image, index) => (
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6 max-w-4xl mx-auto">
+            {elminaImages.slice(0, 2).map((image, index) => (
               <div
                 key={index}
                 className="aspect-[3/4] bg-neutral-900 border border-neutral-800 relative overflow-hidden group"
@@ -98,18 +99,18 @@ export default function BlantyreHouse() {
 
           {/* Row 2 - 1 image centered */}
           <div className="max-w-xs mx-auto mb-4 sm:mb-6">
-            <div className="aspect-[3/4] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
+            <div className="bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
               <img
-                src={pantomimeImages[2].src}
-                alt={pantomimeImages[2].alt}
-                className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                src={elminaImages[2].src}
+                alt={elminaImages[2].alt}
+                className="w-full h-auto opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
               />
             </div>
           </div>
 
           {/* Row 3 - 2 images */}
-          <div className="grid grid-cols-2 gap-4 sm:gap-6">
-            {pantomimeImages.slice(3).map((image, index) => (
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
+            {elminaImages.slice(3).map((image, index) => (
               <div
                 key={index}
                 className="aspect-[3/4] bg-neutral-900 border border-neutral-800 relative overflow-hidden group"
@@ -121,24 +122,6 @@ export default function BlantyreHouse() {
                 />
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Frank6 and Frank7 side by side */}
-        <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
-          <div className="bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
-            <img
-              src="/images/frank6.jpeg"
-              alt="Recreation at Blantyre House"
-              className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-700"
-            />
-          </div>
-          <div className="bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
-            <img
-              src="/images/frank7.jpeg"
-              alt="Blantyre House recreation room"
-              className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-700"
-            />
           </div>
         </div>
 

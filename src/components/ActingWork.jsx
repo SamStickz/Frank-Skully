@@ -148,7 +148,7 @@ export default function ActingWork() {
           <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto mb-12 sm:mb-16">
             <div className="aspect-[4/3] bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
               <img
-                src="/images/stand-in.jpg"
+                src="/images/michael-beach.jpeg"
                 alt="Stand-in work - Period costume"
                 className="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity duration-700"
               />
