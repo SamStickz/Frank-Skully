@@ -28,7 +28,7 @@ export default function Journey() {
             remarkable act of judicial discretion would prove transformative.
           </p>
           <p>
-            Twenty years later, I have remained offense-free—a testament to the
+            Twenty years later, I have remained offense-free, a testament to the
             power of second chances and the belief one person showed in the
             possibility of redemption through art.
           </p>

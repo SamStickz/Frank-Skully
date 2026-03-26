@@ -137,7 +137,7 @@ export default function ActingWork() {
               PROFESSIONAL EXPERIENCE
             </div>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light mb-6 sm:mb-8">
-              Stand-In Work
+              Stand In Work
             </h2>
             <p className="font-body text-base sm:text-lg text-neutral-300 max-w-3xl mx-auto px-4">
               Frank Skully has stood in for lead actors in various productions
