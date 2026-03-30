@@ -56,7 +56,7 @@ export default function HardTalkingExCons() {
               />
             </div>
             <p className="font-body text-[10px] sm:text-xs text-neutral-500 tracking-wider mt-3 sm:mt-4 text-center">
-              Brian Paddick
+              Brian Paddick x Frank Skully
             </p>
           </div>
         </div>
