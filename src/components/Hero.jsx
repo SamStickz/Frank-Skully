@@ -50,6 +50,24 @@ export default function Hero() {
             alt="Frank Skully"
             className="w-full h-auto opacity-90"
           />
+          {/* Agent Info */}
+          <div className="bg-[#0a0a0a] py-6 sm:py-8 px-6 sm:px-8 mt-0 border-t border-neutral-800">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+              <div className="text-center sm:text-left">
+                <p className="font-body text-base sm:text-lg text-white font-medium">
+                  Alex Cusack Management
+                </p>
+              </div>
+              <div className="text-center sm:text-right">
+                <a
+                  href="mailto:jane4acusackmanagement@gmail.com"
+                  className="font-body text-sm sm:text-base text-[#d4af37] hover:text-[#c19d2f] transition-colors"
+                >
+                  jane4acusackmanagement@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

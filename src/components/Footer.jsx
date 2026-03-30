@@ -10,8 +10,11 @@ export default function Footer() {
           justice narratives
         </p>
         <div className="border-t border-neutral-900 pt-6 sm:pt-8">
-          <p className="font-body text-xs text-neutral-600">
+          <p className="font-body text-xs text-neutral-600 mb-2">
             © {new Date().getFullYear()} Frank Skully. All rights reserved.
+          </p>
+          <p className="font-body text-[10px] text-neutral-700 opacity-50">
+            Created by Visiowave
           </p>
         </div>
       </div>
