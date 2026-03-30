@@ -51,7 +51,7 @@ export default function HardTalkingExCons() {
             <div className="max-w-xs sm:max-w-sm mx-auto bg-neutral-900 border border-neutral-800 relative overflow-hidden group">
               <img
                 src="/images/frank13.jpeg"
-                alt="Brian Paddick"
+                alt="Brian Paddick x Frank Skully"
                 className="w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity duration-700"
               />
             </div>

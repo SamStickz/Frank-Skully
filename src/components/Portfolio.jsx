@@ -17,7 +17,7 @@ export default function Portfolio() {
   const portfolio = [
     {
       title: "Every Sinner Has a Future",
-      category: "Documentary",
+      category: "One man theatre show",
       year: "2024",
       link: "#philosophy-video", 
     },

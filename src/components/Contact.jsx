@@ -31,7 +31,13 @@ export default function Contact() {
             narrative? Let's discuss your project.
           </p>
         </div>
-        <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
+        <form
+          action="mailto:frankskully@hotmail.com"
+          method="POST"
+          encType="text/plain"
+          onSubmit={handleSubmit}
+          className="space-y-6 sm:space-y-8"
+        >
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
             <div>
               <label className="block font-body text-[10px] sm:text-xs tracking-widest text-neutral-500 mb-2 sm:mb-3">
@@ -40,6 +46,7 @@ export default function Contact() {
               <input
                 type="text"
                 required
+                name="name"
                 value={formData.name}
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
@@ -55,6 +62,7 @@ export default function Contact() {
               <input
                 type="email"
                 required
+                name="email"
                 value={formData.email}
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
@@ -70,6 +78,7 @@ export default function Contact() {
             </label>
             <select
               required
+              name="projectType"
               value={formData.projectType}
               onChange={(e) =>
                 setFormData({ ...formData, projectType: e.target.value })
@@ -99,6 +108,7 @@ export default function Contact() {
             </label>
             <textarea
               required
+              name="message"
               value={formData.message}
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
