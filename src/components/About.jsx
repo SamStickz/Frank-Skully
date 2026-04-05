@@ -34,7 +34,7 @@ export default function About() {
                 </div>
                 <p>
                   Arrested for conspiracy to rob cash in transit vans, I was
-                  convicted with London gangster Peter Blake (currently the only
+                  convicted with Ex London gangster Peter Blake (currently the only
                   UK prisoner to be convicted without a jury) and given 9 years.
                 </p>
               </div>

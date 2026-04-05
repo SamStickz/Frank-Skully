@@ -2,18 +2,31 @@ import { useState } from "react";
 import { Mail, ArrowRight } from "lucide-react";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    projectType: "",
-    message: "",
-  });
+  const [status, setStatus] = useState("idle"); // idle | submitting | success | error
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for your inquiry. I will respond within 24 hours.");
-    setFormData({ name: "", email: "", projectType: "", message: "" });
+    setStatus("submitting");
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xvzvvdzv", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -31,105 +44,110 @@ export default function Contact() {
             narrative? Let's discuss your project.
           </p>
         </div>
-        <form
-          action="mailto:frankskully@hotmail.com"
-          method="POST"
-          encType="text/plain"
-          onSubmit={handleSubmit}
-          className="space-y-6 sm:space-y-8"
-        >
-          <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
-            <div>
-              <label className="block font-body text-[10px] sm:text-xs tracking-widest text-neutral-500 mb-2 sm:mb-3">
-                NAME
-              </label>
-              <input
-                type="text"
-                required
-                name="name"
-                value={formData.name}
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
-                }
-                className="w-full px-0 py-3 sm:py-4 bg-transparent border-b border-neutral-800 focus:border-[#d4af37] focus:outline-none transition-colors font-body text-sm sm:text-base"
-                placeholder="Your name"
-              />
-            </div>
-            <div>
-              <label className="block font-body text-[10px] sm:text-xs tracking-widest text-neutral-500 mb-2 sm:mb-3">
-                EMAIL
-              </label>
-              <input
-                type="email"
-                required
-                name="email"
-                value={formData.email}
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
-                className="w-full px-0 py-3 sm:py-4 bg-transparent border-b border-neutral-800 focus:border-[#d4af37] focus:outline-none transition-colors font-body text-sm sm:text-base"
-                placeholder="your@email.com"
-              />
-            </div>
-          </div>
-          <div>
-            <label className="block font-body text-[10px] sm:text-xs tracking-widest text-neutral-500 mb-2 sm:mb-3">
-              SERVICE
-            </label>
-            <select
-              required
-              name="projectType"
-              value={formData.projectType}
-              onChange={(e) =>
-                setFormData({ ...formData, projectType: e.target.value })
-              }
-              className="w-full px-0 py-3 sm:py-4 bg-transparent border-b border-neutral-800 focus:border-[#d4af37] focus:outline-none transition-colors font-body text-sm sm:text-base"
+
+        {status === "success" ? (
+          <div className="text-center py-16 space-y-4">
+            <div className="text-[#d4af37] text-5xl mb-4">✓</div>
+            <h3 className="font-display text-2xl font-light">Message Sent</h3>
+            <p className="font-body text-neutral-400">
+              Thank you for your inquiry. I'll respond within 24 hours.
+            </p>
+            <button
+              onClick={() => setStatus("idle")}
+              className="mt-6 font-body text-xs tracking-widest text-[#d4af37] underline underline-offset-4"
             >
-              <option value="" className="bg-[#0a0a0a]">
-                Select a service
-              </option>
-              <option value="advisory" className="bg-[#0a0a0a]">
-                Creative Advisory
-              </option>
-              <option value="acting" className="bg-[#0a0a0a]">
-                Acting
-              </option>
-              <option value="voiceover" className="bg-[#0a0a0a]">
-                Voice-Over
-              </option>
-              <option value="writing" className="bg-[#0a0a0a]">
-                Writing
-              </option>
-            </select>
+              Send another message
+            </button>
           </div>
-          <div>
-            <label className="block font-body text-[10px] sm:text-xs tracking-widest text-neutral-500 mb-2 sm:mb-3">
-              MESSAGE
-            </label>
-            <textarea
-              required
-              name="message"
-              value={formData.message}
-              onChange={(e) =>
-                setFormData({ ...formData, message: e.target.value })
-              }
-              rows={5}
-              className="w-full px-0 py-3 sm:py-4 bg-transparent border-b border-neutral-800 focus:border-[#d4af37] focus:outline-none transition-colors resize-none font-body text-sm sm:text-base"
-              placeholder="Tell me about your project..."
-            />
-          </div>
-          <button
-            type="submit"
-            className="group font-body w-full px-8 sm:px-10 py-4 sm:py-5 bg-[#d4af37] text-[#0a0a0a] text-xs sm:text-sm tracking-widest font-medium hover:bg-[#c19d2f] transition-all duration-300 flex items-center justify-center gap-2 sm:gap-3"
-          >
-            <Mail size={16} className="sm:w-[18px] sm:h-[18px]" />
-            SEND INQUIRY
-            <ArrowRight
-              size={16}
-              className="group-hover:translate-x-1 transition-transform sm:w-[18px] sm:h-[18px]"
-            />
-          </button>
-        </form>
+        ) : (
+          <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+              <div>
+                <label className="block font-body text-[10px] sm:text-xs tracking-widest text-neutral-500 mb-2 sm:mb-3">
+                  NAME
+                </label>
+                <input
+                  type="text"
+                  required
+                  name="name"
+                  className="w-full px-0 py-3 sm:py-4 bg-transparent border-b border-neutral-800 focus:border-[#d4af37] focus:outline-none transition-colors font-body text-sm sm:text-base"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label className="block font-body text-[10px] sm:text-xs tracking-widest text-neutral-500 mb-2 sm:mb-3">
+                  EMAIL
+                </label>
+                <input
+                  type="email"
+                  required
+                  name="email"
+                  className="w-full px-0 py-3 sm:py-4 bg-transparent border-b border-neutral-800 focus:border-[#d4af37] focus:outline-none transition-colors font-body text-sm sm:text-base"
+                  placeholder="your@email.com"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block font-body text-[10px] sm:text-xs tracking-widest text-neutral-500 mb-2 sm:mb-3">
+                SERVICE
+              </label>
+              <select
+                required
+                name="projectType"
+                className="w-full px-0 py-3 sm:py-4 bg-transparent border-b border-neutral-800 focus:border-[#d4af37] focus:outline-none transition-colors font-body text-sm sm:text-base"
+              >
+                <option value="" className="bg-[#0a0a0a]">
+                  Select a service
+                </option>
+                <option value="advisory" className="bg-[#0a0a0a]">
+                  Creative Advisory
+                </option>
+                <option value="acting" className="bg-[#0a0a0a]">
+                  Acting
+                </option>
+                <option value="voiceover" className="bg-[#0a0a0a]">
+                  Voice-Over
+                </option>
+                <option value="writing" className="bg-[#0a0a0a]">
+                  Writing
+                </option>
+              </select>
+            </div>
+
+            <div>
+              <label className="block font-body text-[10px] sm:text-xs tracking-widest text-neutral-500 mb-2 sm:mb-3">
+                MESSAGE
+              </label>
+              <textarea
+                required
+                name="message"
+                rows={5}
+                className="w-full px-0 py-3 sm:py-4 bg-transparent border-b border-neutral-800 focus:border-[#d4af37] focus:outline-none transition-colors resize-none font-body text-sm sm:text-base"
+                placeholder="Tell me about your project..."
+              />
+            </div>
+
+            {status === "error" && (
+              <p className="font-body text-sm text-red-400 text-center">
+                Something went wrong. Please try again or email directly.
+              </p>
+            )}
+
+            <button
+              type="submit"
+              disabled={status === "submitting"}
+              className="group font-body w-full px-8 sm:px-10 py-4 sm:py-5 bg-[#d4af37] text-[#0a0a0a] text-xs sm:text-sm tracking-widest font-medium hover:bg-[#c19d2f] transition-all duration-300 flex items-center justify-center gap-2 sm:gap-3 disabled:opacity-60 disabled:cursor-not-allowed"
+            >
+              <Mail size={16} className="sm:w-[18px] sm:h-[18px]" />
+              {status === "submitting" ? "SENDING..." : "SEND INQUIRY"}
+              <ArrowRight
+                size={16}
+                className="group-hover:translate-x-1 transition-transform sm:w-[18px] sm:h-[18px]"
+              />
+            </button>
+          </form>
+        )}
       </div>
     </section>
   );
